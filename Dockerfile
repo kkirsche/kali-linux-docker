@@ -1,4 +1,4 @@
-FROM kkirsche/kali-linux-docker
+FROM kalilinux/kali
 MAINTAINER kev.kirsche@gmail.com
 
 RUN echo "deb http://http.kali.org/kali kali main contrib non-free" > /etc/apt/sources.list && \
