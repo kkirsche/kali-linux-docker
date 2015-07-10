@@ -1,5 +1,5 @@
-FROM kalilinux/kali
-MAINTAINER steev@kali.org
+FROM kkirsche/kali-linux-docker
+MAINTAINER kev.kirsche@gmail.com
 
 RUN echo "deb http://http.kali.org/kali kali main contrib non-free" > /etc/apt/sources.list && \
 echo "deb-src http://http.kali.org/kali kali main contrib non-free" >> /etc/apt/sources.list && \
