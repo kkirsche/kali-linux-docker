@@ -10,5 +10,9 @@ RUN apt-get -y update && apt-get -y dist-upgrade && apt-get clean
 RUN apt-get -y install kali-linux-full
 RUN apt-get -y install slowhttptest
 RUN apt-get -y install erlang
+RUN wget https://raw.githubusercontent.com/kkirsche/install-BoNeSi/master/install.sh
+RUN chmod -x ./install.sh
+RUN sh ./install.sh
+RUN rm ./install.sh
 
 CMD ["/bin/bash"]
